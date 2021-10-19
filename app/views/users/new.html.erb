@@ -1,14 +1,17 @@
-<h1>Signup!</h1>
+
 
 <div class="container">
-  <h1 class="well">Registration Form</h1>
+  <h1 class="well text-center" >Registration Form</h1>
   <div class="well">
         <%= form_for :user, url: '/users' do |f| %>
           <div>
-            <div class="row text-center">
               <div class="form-group">
-                <label>Name</label>
-                <%= f.text_field :name %>
+                <label>First Name</label>
+                <%= f.text_field :first_name %>
+                </div>
+                <div class="form-group">
+                <label>Last Name</label>
+                <%= f.text_field :last_name %>
               </div>
               <div class="form-group">
                 <label>Email</label>
@@ -22,7 +25,6 @@
                 <label>Password Confirmation:</label>
                 <%= f.password_field :password_confirmation %>
               </div>
-            </div>					
           <%= f.submit "Submit" %>
           </div>
         <% end %>
