@@ -2,6 +2,8 @@
 
 A mini e-commerce application built with Ruby on Rails.
 
+!["Jungle Rails "](https://github.com/Teenaelza/jungle-rails/blob/master/images/jungle.gif)
+
 ## Technology Used
 
 - Ruby on Rails
