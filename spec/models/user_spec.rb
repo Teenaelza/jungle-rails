@@ -65,7 +65,7 @@ RSpec.describe User, type: :model do
       email="TEST@TEST.COM"
       password="foobar1234"
       loginuser=User.authenticate_with_credentials(email,password)
-      loginuser.validate
+      expect(loginuser).to eq(@user)
     end
   end
 end
